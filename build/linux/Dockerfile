@@ -7,7 +7,7 @@ RUN apt -y install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 li
 RUN apt install -y python3 python3-pip
 RUN ln -s /usr/bin/python3 /usr/bin/python
 
-RUN git clone https://github.com/iperov/DeepFaceLive.git
+RUN git clone https://github.com/Joe-TheBro/DeepFaceLive.git
 
 RUN python -m pip install --upgrade pip
 RUN python -m pip install onnxruntime-gpu==1.15.1 numpy==1.21.6 h5py numexpr protobuf==3.20.2 opencv-python==4.8.0.74 opencv-contrib-python==4.8.0.74 pyqt6==6.5.1 onnx==1.14.0 torch==1.13.1 torchvision==0.14.1
