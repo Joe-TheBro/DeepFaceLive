@@ -133,6 +133,8 @@ stream_output = StreamOutput(
 stream_output_sheet_control = stream_output.get_control_sheet()
 stream_output_sheet_control.source_type.select(3) # merged face
 stream_output_sheet_control.is_streaming.set_flag(True) # start streaming
+stream_output_sheet_control.save_sequence_path.set_paths(None)
+stream_output_sheet_control.target_delay.set_number(0)
 
 all_backends = [
     # file_source,
