@@ -18,7 +18,7 @@ from apps.DeepFaceLive.backend import (
 )
 
 # Define paths
-userdata_path = Path("./data")
+userdata_path = Path("../data")
 settings_dirpath = userdata_path / "settings"
 settings_dirpath.mkdir(parents=True, exist_ok=True)
 
